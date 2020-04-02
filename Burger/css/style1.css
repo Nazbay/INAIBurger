@@ -1,0 +1,411 @@
+ *{
+ 	box-sizing: border-box;
+ }
+ a{
+ 	text-decoration: none;
+ 	display: inline-block;
+ }
+ ul,
+ li  {
+ 	display: inline;
+ 	list-style: none;
+ 	margin-right: 10px;
+ 	border: 1px;
+
+ }
+ .container{
+ 	max-width: 1170px;
+ 	margin: 0 auto;
+ 	padding: 0 15px;
+ }
+ body{
+ 	font-family: 'PT Serif', serif;
+ 	font-weight: 400;
+ 	font-size: 14px;
+ 	line-height: 18px;
+ 	color: #5e5e5e;
+
+ }
+ header{
+ 	font-family: 'Roboto', sans-serif;
+
+ }
+ .header__top{  
+ 	background-color: #303030;
+ }
+
+ .header__btn{
+ 	float: right;
+ 	line-height: 36px;
+ 	color: #1b1b1b;
+ 	background-color: #ffc222;
+ 	padding: 5px 20px 4px 20px;
+ 	font-size: 16px;
+ }
+ .header__contacts:after{
+ 	content: "";
+ 	clear: both;
+ 	display: block;
+ }
+ .header__phone,
+ .header__email{
+ 	color: #cbcacb;
+ 	letter-spacing: 0.25;
+ 	line-height: 45px;
+ }
+ 
+
+ .header__phone{
+ 	padding-left: 20px;
+ 	padding-right: 30px;
+ }
+
+ .header__email{
+ 	padding-left: 24px;
+ }
+ .header__content{
+ 	padding: 34px 0px;
+ }
+ body.kids {
+    background: url('../img/bg/kids_bg_ru.jpg') no-repeat 50% 71px;
+    background-size: 1920px;
+}
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.icon {
+    background-size: 100%;
+    display: inline-block;
+}
+
+.container > .content,
+.container-fluid > .content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.utility-header {
+    padding: 6px 0 7px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background: white;
+}
+.utility-header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.utility-header li {
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+.utility-header li.location {
+    display: inline;
+}
+.utility-header a {
+    color: #414042;
+    font-size: 13px;
+    font-family: DINPro-regular, "Helvetica Neue", arial, sans-serif;
+    text-transform: none;
+}
+.utility-header .icon_pindrop-orange {
+    width: 8px;
+    height: 11px;
+    margin-right: 4px;
+}
+
+.main-header {
+    background: url(../img/bg/header-footer-m.png) repeat-x 0 0;
+    margin: 11px 0 -1px;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+}
+.main-header+* {
+    padding-top: 102px;
+}
+.main-header+.pageTitle {
+    padding-top: 110px;
+}
+.coupons-bg {
+    margin-top: 102px;
+}
+.main-header .content {
+    max-width: 100%;
+}
+.main-header .logoNavHolder {
+    height: 92px;
+}
+.main-header .logo {
+    margin: -7px 0 0 3.4375%;
+    /* 22/640 */
+    position: absolute;
+    z-index: 1;
+}
+.main-header .logo > .icon {
+    width: 106px;
+    height: 106px;
+}
+.main-header .mobilePageTitle {
+    position: absolute;
+    margin: 25px 0 0 26%;
+    color: #fff;
+    font-size: 42px;
+    line-height: 1;
+    font-family: 'BlockBeCnPro', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+}
+.main-header .mobileMenu {
+    cursor: pointer;
+    float: right;
+    margin: 5px 20px 0 0;
+}
+.main-header .mobileMenu > .menu-icon > span {
+    display: block;
+    background: #fff;
+    height: 12px;
+    margin-top: 11px;
+    width: 58px;
+}
+.main-header .mobileMenu .icon_close-white {
+    width: 63px;
+    height: 63px;
+    margin-top: 10px;
+    display: none;
+}
+.main-header .mobileMenu.expanded .icon_close-white {
+    display: inline-block;
+}
+.main-header .mobileMenu.expanded .menu-icon {
+    display: none;
+}
+.mainNav {
+    display: none;
+    background: #fff;
+    font-family: 'BlockBeCnPro', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+}
+.mainNav > li {
+    display: block;
+    list-style: none;
+    border-bottom: 2px solid #802629;
+    position: relative;
+}
+.mainNav > li.delivery-li img {
+    display: none;
+}
+.mainNav > li.socialLinks-top {
+    display: none;
+}
+.mainNav > li.hasForm:before,
+.mainNav > li.hasForm:after {
+    content: " ";
+    display: table;
+}
+.mainNav > li.hasForm:after {
+    clear: both;
+}
+.mainNav > li.hasForm:before,
+.mainNav > li.hasForm:after {
+    content: " ";
+    display: table;
+}
+.mainNav > li.hasForm:after {
+    clear: both;
+}
+.mainNav > li:nth-last-child(-n+2) {
+    border-bottom: none;
+}
+.mainNav > li > a {
+    display: block;
+    padding: 13px 15px 9px;
+}
+.mainNav > li .icon_plus-orange,
+.mainNav > li .icon_minus-orange {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 20px;
+    top: 14px;
+    display: none;
+}
+.mainNav > li .icon_plus-orange {
+    display: block;
+}
+.mainNav > li.expanded .icon_plus-orange {
+    display: none;
+}
+.mainNav > li.expanded .icon_minus-orange {
+    display: inline-block;
+}
+.mainNav .menuItem-small {
+    display: none;
+}
+.mainNav .menuItem-medium {
+    color: #ed7800;
+    display: block;
+    font-size: 27px;
+}
+.menuItem-scooter {
+    width: 47px;
+    height: 43px;
+    background: url('../img/bg/scooter-active-50.png') no-repeat;
+    display: inline-block;
+    position: absolute;
+    margin: -6px 0 0 10px;
+    background-size: contain;
+}
+.menuItem-fire {
+    width: 25px;
+    height: 48px;
+    background: url('../img/icon-fire-active.png') no-repeat;
+    display: inline-block;
+    margin: -8px 0 0 10px;
+    position: absolute;
+    background-size: contain;
+}
+
+.mainNav > li.header-app-links {
+    display: none;
+}
+
+@media screen and (min-width: 768px){
+    .main-header .content {
+        min-width: 800px;
+    }
+    .main-header+* {
+        padding-top: 118px;
+    }
+    .main-header+.pageTitle {
+        padding-top: 126px;
+    }
+    .coupons-bg {
+        margin-top: 118px;
+    }
+    .mainNav > li.foodtruck-top {
+        display: none;
+        padding-top: 13px;
+        padding-left: 4px;
+    }
+}
+@media screen and (min-width: 800px) {
+    .main-header .content {
+        min-width: auto;
+    }
+}
+@media screen and (min-width: 1690px) {
+    .main-header .content {
+        max-width: 1800px;
+    }
+    .mainNav > li.header-app-links {
+        display: block;
+        margin-left: 25px;
+        padding-top: 5px;
+    }
+    .mainNav > li.header-app-links .menuItem-medium {
+        font-size: 20px;
+        margin-bottom: 2px;
+    }
+}
+
+.mainNav .utility-menu {
+    border-top: none;
+    background: #ed7800;
+    text-align: center;
+}
+.mainNav .utility-menu > a {
+    color: #fff;
+    text-transform: none;
+    padding: 10px;
+    display: inline-block;
+    font: 14px Arial, Helvetica, Sans-serif;
+}
+.mainNav > li.hasForm > a {
+    display: inline-block;
+}
+.mainNav .formArea {
+    float: right;
+    margin: 9px 15px 0 0;
+}
+.mainNav .formArea .navInput {
+    border: 1px solid #663333;
+    border-width: 1px 0 1px 1px;
+    color: #666;
+    font-size: 12px;
+    height: 38px;
+    width: 220px;
+    padding: 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+.mainNav .formArea .navInputSubmit {
+    background: #663333;
+    border: 0;
+    height: 38px;
+    width: 40px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding: 0;
+}
+.mainNav .formArea .icon_pindrop-white {
+    width: 19px;
+    height: 27px;
+    margin: 5px 1px 0 0;
+}
+.mainNav .formArea .icon_search-white {
+    width: 24px;
+    height: 24px;
+    margin: 7px 0 0;
+}
+.mainNav .formArea ::-webkit-input-placeholder {
+    color: #666666;
+}
+.mainNav .formArea ::-moz-placeholder {
+    color: #666666;
+}
+.mainNav .formArea :-ms-input-placeholder {
+    color: #666666;
+}
+.mainNav .subNav {
+    border-top: 1px solid #802629;
+    display: none;
+    margin: 0 10px;
+    padding: 20px 0;
+}
+.mainNav .subNav > li {
+    float: left;
+    width: 50%;
+}
+.mainNav .subNav > li > a {
+    color: #444242;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1;
+    padding: 15px 0;
+}
+.secondaryNav {
+    display: none;
+}
+.mainNav li.alert-signup-popup
+{
+    display: none;
+}
